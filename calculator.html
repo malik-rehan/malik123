@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Title</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <form action="" name="question">
+                    <input type="text" name="answer" id="" class="form-control mt-4">
+                    <table class="table">
+                        <tr>
+                            <td><input type="button" value="7" class="btn btn-primary w-100" onclick="question.answer.value += '7' "></td>
+                            <td><input type="button" value="8" class="btn btn-primary w-100" onclick="question.answer.value += '8' "></td>
+                            <td><input type="button" value="9" class="btn btn-primary w-100" onclick="question.answer.value += '9' "></td>
+                            <td><input type="button" value="X" class="btn btn-primary w-100" onclick="question.answer.value += '*' "></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="4" class="btn btn-primary w-100" onclick="question.answer.value += '4' "></td>
+                            <td><input type="button" value="5" class="btn btn-primary w-100" onclick="question.answer.value += '5' "></td>
+                            <td><input type="button" value="6" class="btn btn-primary w-100" onclick="question.answer.value += '6' "></td>
+                            <td><input type="button" value="-" class="btn btn-primary w-100" onclick="question.answer.value += '-' "></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="1" class="btn btn-primary w-100" onclick="question.answer.value += '1' "></td>
+                            <td><input type="button" value="2" class="btn btn-primary w-100" onclick="question.answer.value += '2' "></td>
+                            <td><input type="button" value="3" class="btn btn-primary w-100" onclick="question.answer.value += '3' "></td>
+                            <td><input type="button" value="+" class="btn btn-primary w-100" onclick="question.answer.value += '+' "></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="0" class="btn btn-primary w-100" onclick="question.answer.value += '0' "></td>
+                            <td><input type="button" value="=" class="btn btn-primary w-100" onclick="question.answer.value = eval(question.answer.value)"></td>
+                            <td><input type="button" value="." class="btn btn-primary w-100" onclick="question.answer.value += '.' "></td>
+                            <td><input type="button" value="/" class="btn btn-primary w-100" onclick="question.answer.value += '/' "></td>
+                        </tr>
+                        <tr>
+                            <td><input type="reset" value="C" class="btn btn-danger w-100" onclick="question.answer.value"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
